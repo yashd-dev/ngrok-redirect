@@ -1,16 +1,36 @@
----
-
----
-
+<!doctype html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Redirect Page</title>
+
+		<script>
+			window.onload = function () {
+				window.location.href =
+					"https://8563f21da75d-16062689802356915754.ngrok-free.app";
+			};
+		</script>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="bg-rosePine-base text-rosePine-text">
+		<div class="flex items-center justify-center h-screen">
+			<div
+				class="bg-rosePine-overlay py-8 sm:px-10 rounded-xl shadow-md max-w-md flex flex-col items-center justify-center m-4 text-center border-4 border-rosePine-love"
+			>
+				<p class="text-2xl mb-4">This page is being redirected...</p>
+				<button
+					onclick="redirectToNgrok()"
+					class="bg-rosePine-pine hover:bg-rosePine-gold transition duration-100 ease-linear text-white font-bold py-2 px-4 rounded"
+					>Redirect Now</button
+				>
+			</div>
+		</div>
+
+		<script>
+			function redirectToNgrok() {
+				window.location.href =
+					"https://8563f21da75d-16062689802356915754.ngrok-free.app";
+			}
+		</script>
 	</body>
 </html>
